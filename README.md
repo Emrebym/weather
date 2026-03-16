@@ -1,29 +1,64 @@
+<div align="center">
+
 # 🌤️ Weather
 
-A weather forecast application that shows current conditions and forecasts for any city using live weather API data.
+**A weather forecast app with real-time data, built with React and Tailwind CSS**
 
-## Features
-
-- **Current weather** — temperature, humidity, wind speed, and conditions
-- **City search** — look up weather for any location worldwide
-- **Visual indicators** — weather icons matching current conditions
-- **Clean UI** — simple, easy-to-read layout
-
-## Tech Stack
-
+![React](https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![Weather API](https://img.shields.io/badge/Weather_API-5eb4c9?style=flat-square&logo=cloud&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-## Getting Started
+</div>
+
+---
+
+## 📖 About
+
+A clean weather application that fetches real-time weather data via API and displays current conditions for any city. Features weather-specific icons, temperature readings, humidity, and wind speed in a responsive interface styled with Tailwind CSS.
+
+## ✨ Features
+
+- **City search** — look up current weather for any location worldwide
+- **Live weather data** — temperature, humidity, wind speed from weather API
+- **Dynamic icons** — weather condition icons change based on current state (sunny, cloudy, rain, snow, etc.)
+- **Custom assets** — purpose-built weather icons and visual elements
+- **Responsive layout** — Tailwind CSS for clean, mobile-friendly design
+- **Error handling** — graceful handling of invalid city names or API errors
+
+## 🏗️ Architecture
+
+```
+src/
+├── components/
+│   └── Weatherapp/
+│       ├── WeatherApp.jsx    # Main weather component — API calls, state, display
+│       └── WeatherApp.css    # Component-specific styles
+├── components/Assets/        # Weather icons (clear, cloud, drizzle, humidity, etc.)
+├── App.js                    # Root component
+├── index.js                  # React entry point
+└── index.css                 # Tailwind imports & global styles
+```
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | React 18 (Create React App) |
+| Styling | Tailwind CSS |
+| API | OpenWeatherMap API |
+| Testing | Jest, React Testing Library |
+
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/Emrebym/weather.git
 cd weather
-# Open index.html in your browser
+npm install
+npm start
 ```
 
-## License
+Add your API key in the WeatherApp component, then open `http://localhost:3000`
+
+## 📝 License
 
 MIT
